@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #d8a3dd;
+}
+
+body {
+  font-family: "Croissant One", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  font-size: 60px;
+}
+
+img {
+  width: 250px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: left;
+  border-radius: 30%;
+  padding: 20px;
+}
+
+#navbar-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  pad: 0;
+}
+
+footer {
+  opacity: 0.4;
+  margin-top: 20px;
+}
