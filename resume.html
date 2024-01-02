@@ -13,15 +13,82 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+
     <title>Resume</title>
+
+    <style>
+        :root {
+            --primary-color: #d8a3dd;
+            --secondary-color: #f3cad6;
+            --teritary-color: #f8f9fa;
+            --fourth-color: #c8c9c7;
+        }
+
+        body {
+            font-family: "Croissant One", serif;
+            font-family: "Montserrat", sans-serif;
+            font-family: "Poppins", sans-serif;
+            background-color: #f6f8fc;
+
+        }
+
+        header {
+            color: var(--teritary-color);
+            font-size: 70px;
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-decoration: underline;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #fff9ef;
+        }
+
+        h4 {
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        h5 {
+            margin-bottom: 6px;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            margin-top: 10px;
+        }
+
+        .navbar a {
+            color: var(--teritary-color);
+        }
+
+        .navbar a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        footer {
+            opacity: 0.4;
+            margin-top: 20px;
+        }
+
+
+        .logo-top {
+            width: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg " id="#navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="AM.ico" alt="icon-top"></a>
+                <a class="navbar-brand" href="index.html"><img class="logo-top" src="AM.ico" alt="icon-top"></a>
 
                 <span> </span>
 
@@ -49,7 +116,79 @@
             </div>
         </nav>
         <h1>Resume</h1>
+        <h4>Summary </h4>
+        <Summary>Entry-level front-end developer with knowledge of HTML, CSS, and JavaScript.</Summary>
+        <hr />
+        <h4>Certifications</h4>
+        <h5> <a href="https://www.coursera.org/account/accomplishments/verify/G93DXRHM6WWD">Coursera Meta Introduction
+                to Front-End Development, December 2023</a> </h5>
+        <summary>Explored HTML, CSS, and JavaScript fundamentals.</summary>
+        <Summary>Gained practical experience in building responsive web pages.</Summary>
+        <summary>Learned best practices for front-end development.</summary>
 
+        <h5> <a href="https://www.shecodes.io/certificates/17f918f388daff10b544e4090b7d5e93">SheCodes Plus, December
+                2023</a> </h5>
+        <summary>Advanced JavaScript techniques to build interactive applications.</summary>
+        <summary>Learned how to integrate a live API to fetch live data.</summary>
+        <summary>Learned how to use GitHub to manage code and how to host a website.</summary>
+        <summary>Created interactive weather application.</summary>
+
+        <h5> <a href="https://www.shecodes.io/certificates/ba1d4e4a2e4326febc4bdc16d9d4c0d7">SheCodes Basics, July
+                2023</a> </h5>
+        <summary>Learned the fundamentals of HTML, CSS, and JavaScript.</summary>
+        <summary>Learned how to build an interactive web page.</summary>
+        <summary>Learned how to work with a code editor</summary>
+
+        <hr />
+
+        <h4>Work Experience</h4>
+        <h5>Hartford Healthcare Medical Group, Southington, CT</h5>
+        <span class="paragraph">
+            Patient Service Coordinator, June 2021-August 2023 </span>
+        <summary>Served as the first point of contact for end-users and provided technical assistance for incoming
+            queries for MyChart
+            assistance.</summary>
+        <summary>Promoted positive experience when welcoming and interacting with patients and staff.</summary>
+        <summary>Registered patients, scheduled patient appointments, created a new patient account in the system,
+            entered demographic
+            data, and collected copayments.</summary>
+        <summary>Experienced with Epic system, created telephone encounters, and routed communication to medical
+            assistants, nurses,
+            and doctors.</summary>
+        <summary>On average 75 calls per day</summary>
+        <summary>Converted and scanned paper medical charts into the Epic system.</summary>
+        <summary>Completed deposits and experience with the OnBase system.</summary>
+        <summary>Type 50 WPM and proficient in Microsoft Office system (Word, Excel, Powerpoint, Outlook).</summary>
+
+        <h5>Hilton C. Buley Library, New Haven, CT</h5>
+        <span class="paragraph"> Circulation Desk Attendant, May 2017-May 2020</span>
+        <summary>Gave customer service and registered patrons and collected fines.</summary>
+        <summary>Checked in and out materials, such as books, markers, DVD, and headphones.</summary>
+        <summary>Processed Interlibrary Loans from Connecticut State and community colleges.</summary>
+        <summary>Processes, withdraws, repairs, or reconditions library materials.</summary>
+        <summary>Returned books and other material to their shelves.</summary>
+        <summary>Organization of stacks such as added call number signs and directions.</summary>
+        <summary>Managed poster production such as printing and lamination.</summary>
+
+        <h5>Office of Public Health Practice: Yale School of Public Health, New Haven, CT</h5>
+        <span class="paragraph">Intern, January 2020-May2020</span>
+        <summary>Supported staff and faculty with the development of communication materials, event planning and
+            management, and
+            proof-reading materials.</summary>
+        <summary>Supported the New England Public Health Training Center (NEPHTC) with workforce development training
+            materials for CT
+            Train, CHES credit offerings, event support, and developing downloadable version of CT Opioid Toolkit
+            Training.</summary>
+        <summary>Provided program evaluation support via data entry for NEPHTC events as needed.</summary>
+        <summary>Collaborated with preceptor to create an online program for Yale Pathways to Science: Public Health.
+        </summary>
+        <hr />
+        <h4>Education</h4>
+        <h5>George Washington University, Washington, CT</h5>
+        <span class="paragraph">Master of Public Health - December, 2023</span>
+        <h5>Southern Connecticut State University, New Haven, CT</h5>
+        <span class="paragraph">Bachelor of Science in Public Health with a Minor in Wellness</span>
+        <hr>
     </div>
 </body>
 
