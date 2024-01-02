@@ -63,6 +63,10 @@ p {
   cursor: pointer;
 }
 
+.collapse {
+  text-align: center;
+}
+
 footer {
   opacity: 0.4;
   margin-top: 10px;
