@@ -28,15 +28,6 @@ small {
   text-decoration: underline;
 }
 
-.vl {
-  border-left: 6px solid var(--teritary-color);
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  bottom: 80px;
-}
-
 img {
   width: 300px;
   display: flex;
@@ -48,6 +39,15 @@ img {
 
 p {
   opacity: 0.25;
+}
+
+.vr {
+  border-left: 6px solid var(--teritary-color);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 80px;
 }
 
 .navbar a {
