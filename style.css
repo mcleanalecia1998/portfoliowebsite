@@ -1,8 +1,9 @@
 :root {
   --primary-color: #d8a3dd;
-  --secondary-color: #f3cad6;
+  --secondary-color: #f5ccd8;
   --teritary-color: #f8f9fa;
   --fourth-color: #c8c9c7;
+  --background-color: #e3e5e6;
 }
 
 body {
@@ -16,6 +17,7 @@ header,
 h2,
 h3,
 h4,
+.skills,
 footer {
   text-align: center;
 }
@@ -39,7 +41,7 @@ h1 {
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 li {
@@ -47,6 +49,7 @@ li {
 }
 
 h4 a {
+  font-size: 28px;
   color: var(--primary-color);
 }
 
@@ -55,18 +58,43 @@ small {
 }
 
 img {
-  width: 250px;
+  width: 400px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.img-icon {
+  width: 300px;
   display: flex;
   margin: 0 auto;
   border-radius: 40%;
   margin-top: 20px;
 }
+
+.contact-icon {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
 p {
-  opacity: 0.25;
+  line-height: 1.5;
 }
 
 hr {
   border: 2px solid white;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  border: 3px solid white;
 }
 
 .navbar {
@@ -74,8 +102,16 @@ hr {
   margin: 10px;
 }
 
+.navbar-brand {
+  color: white;
+  font-size: 30px;
+  font-style: bold;
+}
+
 .nav-link {
-  color: var(--teritary-color);
+  color: white;
+  margin: 4px;
+  border: 2px solid var(--secondary-color);
 }
 
 .nav-link:hover {
@@ -86,7 +122,7 @@ hr {
 .nav-link active {
   color: var(--primary-color);
   margin: 4px;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid black;
   border-radius: 4px;
 }
 
@@ -100,19 +136,10 @@ hr {
   width: 40px;
 }
 
-.card {
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-.card-img-top {
-  width: 280px;
-}
-
 .btn {
   background-color: #9053ed;
 }
+
 .home {
   width: 30px;
   margin-left: 21px;
@@ -120,16 +147,40 @@ hr {
 }
 
 .contact-info {
-  margin-bottom: 200px;
+  margin-bottom: 480px;
+}
+
+.personal-summary {
+  font-size: 24px;
+  color: #9053ed;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+ul {
+  font-size: 24px;
+  color: #9053ed;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.skills {
+  font-size: 18px;
+  background-color: var(--background-color);
+  border-radius: 8px;
 }
 
 footer {
-  position: fixed;
   text-align: center;
   left: 0;
+  right: 0;
   bottom: 0;
+  margin: 6px;
   opacity: 0.4;
   padding: 4px;
-  margin: 10px;
   border-top: 4px solid white;
 }
