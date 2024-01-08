@@ -18,6 +18,12 @@ header {
   font-size: 70px;
   margin-top: 60px;
 }
+
+h1,
+h3 {
+  color: var(--teritary-color);
+}
+
 h1 {
   font-size: 50px;
   text-decoration: underline;
@@ -29,6 +35,10 @@ h2 {
   margin-top: 10px;
 }
 
+li {
+  list-style: none;
+}
+
 small {
   text-decoration: underline;
 }
@@ -37,7 +47,7 @@ img {
   width: 250px;
   display: flex;
   margin: 0 auto;
-  border-radius: 60%;
+  border-radius: 40%;
   margin-top: 20px;
 }
 p {
@@ -46,7 +56,7 @@ p {
 
 .navbar {
   background-color: var(--primary-color);
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .navbar a {
@@ -60,11 +70,6 @@ p {
   border-radius: 4px;
 }
 
-footer {
-  opacity: 0.4;
-  margin-top: 20px;
-}
-
 .logo {
   width: 40px;
   text-align: center;
@@ -75,7 +80,9 @@ footer {
 }
 
 .card {
-  margin: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .card-img-top {
@@ -84,4 +91,9 @@ footer {
 
 .btn {
   background-color: #9053ed;
+}
+
+footer {
+  opacity: 0.4;
+  margin-top: 20px;
 }
