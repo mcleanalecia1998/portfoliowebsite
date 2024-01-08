@@ -10,6 +10,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
   background-color: var(--secondary-color);
+}
+
+header,
+h2,
+h3,
+h4,
+footer {
   text-align: center;
 }
 
@@ -20,6 +27,7 @@ header {
 }
 
 h1,
+h2,
 h3 {
   color: var(--teritary-color);
 }
@@ -27,16 +35,19 @@ h3 {
 h1 {
   font-size: 50px;
   text-decoration: underline;
-  margin-top: 20px;
+  margin: 20px;
 }
 
-h2 {
-  color: var(--teritary-color);
-  margin-top: 10px;
+h3 {
+  font-size: 48px;
 }
 
 li {
   list-style: none;
+}
+
+h4 a {
+  color: var(--primary-color);
 }
 
 small {
@@ -54,29 +65,39 @@ p {
   opacity: 0.25;
 }
 
+hr {
+  border: 2px solid white;
+}
+
 .navbar {
   background-color: var(--primary-color);
   margin: 10px;
 }
 
-.navbar a {
+.nav-link {
   color: var(--teritary-color);
 }
 
-.navbar a:hover {
-  background-color: var(--secondary-color);
-  color: white;
+.nav-link:hover {
+  color: var(--primary-color);
+  background-color: var(--teritary-color);
+}
+
+.nav-link active {
+  color: var(--primary-color);
+  margin: 4px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.navbar:hover {
+  color: var(--teritary-color);
   cursor: pointer;
   border-radius: 4px;
 }
 
 .logo {
   width: 40px;
-  text-align: center;
-}
-
-.logo-top {
-  width: 10px;
 }
 
 .card {
@@ -92,8 +113,23 @@ p {
 .btn {
   background-color: #9053ed;
 }
+.home {
+  width: 30px;
+  margin-left: 21px;
+  border: none;
+}
+
+.contact-info {
+  margin-bottom: 200px;
+}
 
 footer {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
   opacity: 0.4;
-  margin-top: 20px;
+  padding: 4px;
+  margin: 10px;
+  border-top: 4px solid white;
 }
