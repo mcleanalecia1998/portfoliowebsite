@@ -110,6 +110,7 @@ hr {
 
 .nav-link {
   color: white;
+  font-size: 15px;
   margin: 4px;
   border: 2px solid var(--secondary-color);
 }
@@ -199,6 +200,7 @@ footer {
   .img-icon {
     width: 200px;
     border-radius: 8px;
+    margin-top: 0;
   }
 
   .header-icon {
@@ -211,7 +213,12 @@ footer {
   .personal-summary {
     font-size: 18px;
   }
-
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
   footer {
     font-size: 12px;
   }
