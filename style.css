@@ -35,13 +35,13 @@ h3 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: underline;
   margin: 20px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 li {
@@ -151,7 +151,7 @@ hr {
 }
 
 .personal-summary {
-  font-size: 24px;
+  font-size: 22px;
   color: #9053ed;
   text-align: center;
   margin-bottom: 10px;
@@ -161,7 +161,7 @@ hr {
 }
 
 ul {
-  font-size: 14px;
+  font-size: 17px;
   color: #9053ed;
   text-align: center;
   margin-bottom: 10px;
@@ -169,7 +169,7 @@ ul {
 }
 
 .skills {
-  font-size: 18px;
+  font-size: 40px;
   background-color: var(--background-color);
   border-radius: 8px;
 }
