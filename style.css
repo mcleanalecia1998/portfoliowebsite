@@ -13,22 +13,6 @@ body {
   background-color: var(--secondary-color);
 }
 
-@media (max-width: 600px) {
-  header {
-    font-size: 50px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  img {
-    width: 200px;
-    border-radius: 40px;
-  }
-  .personal-summary {
-    font-size: 18px;
-  }
-}
-
 header,
 h2,
 h3,
@@ -199,4 +183,36 @@ footer {
   opacity: 0.4;
   padding: 4px;
   border-top: 4px solid white;
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  strong {
+    font-size: 63px;
+  }
+  .img-icon {
+    width: 200px;
+    border-radius: 8px;
+  }
+
+  .header-icon {
+    display: none;
+  }
+
+  .index-info {
+    font-size: 14px;
+  }
+  .personal-summary {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
