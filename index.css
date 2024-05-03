@@ -57,37 +57,33 @@ p {
 .nav-link:hover {
   color: var(--primary-color);
   background-color: var(--teritary-color);
-}
-
-.nav-link active {
-  border-left: 60px solid white;
+  border-radius: 10px;
 }
 
 i .nav-icon {
-  size: 30px;
+  size: 90px;
 }
 
-.menu {
-  width: 250px;
+.sidebar {
+  width: 300px;
   height: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
   position: fixed;
   border-radius: 0;
-
   background-color: var(--primary-color);
   text-align: center;
   z-index: 1;
 }
 
-.menu:hover {
+.sidebar:hover {
   width: 300px;
-  border-radius: 2px solid red;
+  background-color: rgba (216, 163, 221, 0.5);
 }
 
-.menu span {
-  font-size: 18px;
+.sidebar span {
+  font-size: 20px;
 }
 
 .sidenav {
@@ -106,13 +102,19 @@ men a {
   height: 30px;
   padding: 15px;
   display: flex;
+  font-size: 80px;
   align-items: center;
-  color: #000;
   border-radius: 15px;
   white-space: nowrap;
   margin-right: 15px;
-
   cursor: pointer;
+}
+
+.active {
+  color: var(--teritary-color);
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .contact-menu {
@@ -148,6 +150,7 @@ men a {
   padding: 10px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: 0;
   width: var(--content);
@@ -159,13 +162,14 @@ men a {
 
 .btn-branding {
   background-color: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 15px;
   color: white;
-  font-size: 18px;
+  font-size: 19px;
   padding: 15px 20px;
 }
 
 .btn-branding:hover {
+  color: var(--primary-color);
   background-color: var(--teritary-color);
 }
 
@@ -209,7 +213,7 @@ img {
   font-size: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   h1 {
     font-size: 44px;
     line-height: 2;
@@ -219,6 +223,40 @@ img {
   }
   h4 {
     font-size: 18px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  .sidebar:hover {
+    display: none;
+  }
+
+  .sidebar span {
+    font-size: 16px;
+  }
+  .men {
+    margin: 0 auto;
+  }
+
+  .img-profile {
+    display: none;
+  }
+
+  .contact-menu {
+    display: none;
+  }
+
+  .sec1 {
+    padding: 10px;
+    margin: 0 auto;
   }
 
   .project-img {
@@ -232,9 +270,7 @@ img {
   .btn {
     font-size: 18px;
   }
-  .hero {
-    padding: 80px 20px;
-  }
+
   .content {
     text-align: center;
     padding: 0;
@@ -250,5 +286,9 @@ img {
   }
   .img-project {
     width: 300px;
+  }
+
+  .about-me-text {
+    text-align: center;
   }
 }
