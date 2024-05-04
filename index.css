@@ -47,6 +47,11 @@ p {
   line-height: 30px;
 }
 
+li {
+  list-style: none;
+  text-align: center;
+}
+
 .nav-link {
   color: var(--teritary-color);
   font-size: 15px;
@@ -147,13 +152,19 @@ men a {
 }
 
 .sec1 {
-  padding: 10px;
+  padding: 30px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   margin-left: auto;
   margin-right: 0;
   width: var(--content);
+}
+
+.skill {
+  padding: 10px;
+  border: 6px solid var(--primary-color);
+  border-radius: 10px;
 }
 
 .btn {
@@ -213,6 +224,44 @@ img {
   font-size: 16px;
 }
 
+@media (min-width: 900px) {
+  .sidebar {
+    width: 200px;
+  }
+  .sec1 {
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  .sidebar:hover {
+    display: none;
+  }
+
+  .sidebar span {
+    font-size: 16px;
+  }
+  .men {
+    margin: 0 auto;
+  }
+
+  .img-profile {
+    display: none;
+  }
+
+  .contact-menu {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   h1 {
     font-size: 44px;
