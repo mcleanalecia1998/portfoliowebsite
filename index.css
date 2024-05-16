@@ -3,7 +3,11 @@
   --secondary-color: #f5ccd8;
   --teritary-color: #f8f9fa;
   --fourth-color: #c8c9c7;
-  --background-color: #e3e5e6;
+  --background-color: #f3ece1;
+  --hero-color: #d8a3dd;
+
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 
   --content: calc((100vw / 12) * 9.5);
   --small: calc((100vw / 12) * 0.5);
@@ -12,9 +16,7 @@
 }
 
 body {
-  font-family: "Croissant One", serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font-family);
   background-color: var(--background-color);
 }
 
@@ -47,16 +49,53 @@ p {
   line-height: 30px;
 }
 
+h3 {
+  text-align: center;
+}
+
 li {
   list-style: none;
   text-align: center;
+}
+
+hr {
+  margin: 30px;
+}
+
+.hero {
+  background-color: var(--hero-color);
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  color: var(--teritary-color);
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.container {
+  padding: 50px 30px;
+  font-family: var(--heading-font-family);
 }
 
 .nav-link {
   color: var(--teritary-color);
   font-size: 15px;
   margin: 4px;
-  padding: 10px;
+  padding: 20px;
+  transition: all 100ms ease-in-out;
 }
 
 .nav-link:hover {
@@ -70,7 +109,7 @@ i .nav-icon {
 }
 
 .sidebar {
-  width: 300px;
+  width: 800px;
   height: 100%;
   overflow: hidden;
   top: 0;
@@ -80,11 +119,6 @@ i .nav-icon {
   background-color: var(--primary-color);
   text-align: center;
   z-index: 1;
-}
-
-.sidebar:hover {
-  width: 300px;
-  background-color: rgba (216, 163, 221, 0.5);
 }
 
 .sidebar span {
@@ -169,17 +203,12 @@ men a {
 
 .btn {
   background-color: var(--primary-color);
-}
-
-.btn-branding {
-  background-color: var(--primary-color);
   border-radius: 15px;
-  color: white;
   font-size: 19px;
   padding: 15px 20px;
 }
 
-.btn-branding:hover {
+.btn:hover {
   color: var(--primary-color);
   background-color: var(--teritary-color);
 }
@@ -216,12 +245,13 @@ img {
   border-radius: 10px;
 }
 .project-title {
-  font-size: 18px;
+  font-size: 24px;
   color: var(--primary-color);
   font-weight: bold;
 }
 .project-text {
-  font-size: 16px;
+  font-size: 18px;
+  color: #595c5f;
 }
 
 @media (min-width: 900px) {
@@ -241,10 +271,6 @@ img {
 
   .sidebar a {
     float: left;
-  }
-
-  .sidebar:hover {
-    display: none;
   }
 
   .sidebar span {
@@ -274,18 +300,8 @@ img {
     font-size: 18px;
   }
 
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
   .sidebar a {
     float: left;
-  }
-
-  .sidebar:hover {
-    display: none;
   }
 
   .sidebar span {
