@@ -49,7 +49,8 @@ p {
   line-height: 30px;
 }
 
-h3 {
+h3,
+h5 {
   text-align: center;
 }
 
@@ -85,9 +86,18 @@ hr {
   font-size: 24px;
 }
 
-.container {
+.portfolio-area {
+  background-color: var(--hero-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+.portfolio-area h1 {
+  color: var(--teritary-color);
+}
+
+.project-description {
   padding: 50px 30px;
-  font-family: var(--heading-font-family);
 }
 
 .nav-link {
@@ -109,7 +119,7 @@ i .nav-icon {
 }
 
 .sidebar {
-  width: 800px;
+  width: 250px;
   height: 100%;
   overflow: hidden;
   top: 0;
@@ -202,15 +212,16 @@ men a {
 }
 
 .btn {
+  color: white;
+  font-family: var(--heading-font-family);
   background-color: var(--primary-color);
   border-radius: 15px;
   font-size: 19px;
   padding: 15px 20px;
 }
-
 .btn:hover {
-  color: var(--primary-color);
   background-color: var(--teritary-color);
+  color: var(--primary-color);
 }
 
 .btn-branding-outline {
@@ -219,11 +230,6 @@ men a {
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 30px;
-}
-
-.btn-branding-outline:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
 }
 
 img {
@@ -241,7 +247,9 @@ img {
 }
 
 .project-img {
-  size: 3px;
+  width: 380px;
+  margin-left: 80px;
+  padding: 6px;
   border-radius: 10px;
 }
 .project-title {
@@ -254,40 +262,6 @@ img {
   color: #595c5f;
 }
 
-@media (min-width: 900px) {
-  .sidebar {
-    width: 200px;
-  }
-  .sec1 {
-    padding: 20px;
-  }
-}
-@media (max-width: 900px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  .sidebar span {
-    font-size: 16px;
-  }
-  .men {
-    margin: 0 auto;
-  }
-
-  .img-profile {
-    display: none;
-  }
-
-  .contact-menu {
-    display: none;
-  }
-}
 @media (max-width: 700px) {
   h1 {
     font-size: 44px;
@@ -300,6 +274,16 @@ img {
     font-size: 18px;
   }
 
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sec1 {
+    padding: 20px;
+  }
+
   .sidebar a {
     float: left;
   }
@@ -307,6 +291,11 @@ img {
   .sidebar span {
     font-size: 16px;
   }
+
+  .portfolio-area {
+    padding: 0px;
+  }
+
   .men {
     margin: 0 auto;
   }
