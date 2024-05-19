@@ -142,6 +142,15 @@ i .nav-icon {
   transition: 0.2s ease-in-out;
 }
 
+.sidebar-img {
+  width: 20vh;
+  max-width: var(--big);
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
 .men {
   margin: 20% auto;
   width: fit-content;
@@ -196,19 +205,25 @@ men a {
 }
 
 .sec1 {
-  padding: 30px;
+  padding: 10px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 30px;
   width: var(--content);
 }
 
-.skill {
-  padding: 10px;
-  border: 6px solid var(--primary-color);
+.skill-area {
+  background-color: var(--hero-color);
+  padding: 20px 80px;
+  margin-top: 20px;
   border-radius: 10px;
+  color: white;
+}
+
+.skill-area h3 {
+  color: white;
 }
 
 .btn {
@@ -237,15 +252,6 @@ img {
   overflow: clip;
 }
 
-.img-profile {
-  width: 20vh;
-  max-width: var(--big);
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  border-radius: 50%;
-}
-
 .project-img {
   width: 380px;
   margin-left: 80px;
@@ -253,7 +259,7 @@ img {
   border-radius: 10px;
 }
 .project-title {
-  font-size: 24px;
+  font-size: 30px;
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -262,7 +268,41 @@ img {
   color: #595c5f;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  .sidebar-img {
+    display: none;
+  }
+  .sidebar span {
+    font-size: 16px;
+  }
+  .men {
+    margin: 0 auto;
+  }
+
+  .sec1 {
+    margin-right: auto;
+  }
+  .portfolio-area {
+    padding: 0;
+  }
+  .portfolio-area h1 {
+    font-size: 70px;
+  }
+
+  .project-img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
   h1 {
     font-size: 44px;
     line-height: 2;
@@ -300,7 +340,7 @@ img {
     margin: 0 auto;
   }
 
-  .img-profile {
+  .sidebar-img {
     display: none;
   }
 
@@ -337,9 +377,6 @@ img {
     width: 100px;
     display: block;
     margin: 0 auto;
-  }
-  .img-project {
-    width: 300px;
   }
 
   .about-me-text {
